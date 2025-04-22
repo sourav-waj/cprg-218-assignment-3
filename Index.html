@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shangri-La Beach Resort</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="content/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6270ad8f91.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-container">
+            <a href="Index.html">
+                <img src="content/logo.svg" alt="Shangri-La website logo">
+            </a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+              <li><a href="Index.html">Home</a></li>
+              <li><a href="Accommodations.html">Accommodations</a></li>
+              <li><a href="Dining.html">Dining</a></li>
+              <li><a href="Testimonials.html">Testimonials</a></li>
+              <li><a href="Spa.html">Spa</a></li>
+              <li><a href="Activities.html">Activities</a></li>
+            </ul>
+          
+            <div class="menu-toggle" onclick="toggleMenu()">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </nav>
+          
+    </header>
+
+    <section class="hero">
+        <h1>Your Dream Getaway</h1>
+        <p>Indulge in luxury and breathtaking views at Shangri-La Beach Resort.</p>
+        
+    </section>
+    <section class="weather-widget">
+        <h3>Current Weather in Cancún, Mexico</h3>
+        <div class="weather-info">
+          <i class="fa-solid fa-cloud-sun"></i>
+          <span id="temperature">Loading...</span>
+        </div>
+    </section>
+      
+    <section class="features" id="features">
+        <h2>Experience Unforgettable Moments</h2>
+        <div class="feature-responsiveness">
+            <div class="feature">
+                <img src="content/beach-swing.jpg" alt="Private Beach Access">
+                <h3>Private Beach</h3>
+                <p>Step onto our pristine, white-sand beach.</p>
+            </div>
+            <div class="feature">
+                <img src="content/pool.jpg" alt="Infinity Pool">
+                <h3>Infinity Pool</h3>
+                <p>Relax by our stunning oceanfront infinity pool.</p>
+            </div>
+            <div class="feature">
+                <img src="content/SPA.jpg" alt="World-Class Spa">
+                <h3>World-Class Spa</h3>
+                <p>Rejuvenate your mind and body at our spa.</p>
+            </div>
+            <div class="feature">
+                <img src="content/Dining.jpg" alt="Exquisite Dining">
+                <h3>Exquisite Dining</h3>
+                <p>Savor culinary delights at our restaurants.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="accommodations" id="accommodations">
+        <h2>Our Luxurious Accommodations</h2>
+        <div class="rooms">
+            <div class="room">
+                <img src="content/Ocean_Front.jpg" alt="Ocean View Deluxe Room">
+                <h3>Ocean View Deluxe Room</h3>
+                <p>Enjoy stunning ocean views from your private balcony.</p>
+                <a href="#">View Details</a>
+            </div>
+            <div class="room">
+                <img src="content/Beach.jpg" alt="Image showing a beach">
+                <h3>Beachfront Suite</h3>
+                <p>Step directly onto the sand from your spacious suite.</p>
+                <a href="#">View Details</a>
+            </div>
+            <div class="room">
+                <img src="content/gardern-view.jpg" alt="Garden View Family Room">
+                <h3>Garden View Family Room</h3>
+                <p>Perfect for families, with ample space and garden views.</p>
+                <a href="#">View Details</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="testimonials" id="testimonials">
+        <h2>What Our Guests Are Saying</h2>
+        <div class="testimonial-list">
+            <div class="testimonial">
+                <p>"Our stay at Shangri-La was absolutely perfect! The service was impeccable, and the views were
+                    breathtaking."</p>
+                <strong>- Sarah M.</strong>
+            </div>
+            <div class="testimonial">
+                <p>"The beachfront suite was amazing! Waking up to the sound of the waves and stepping right onto the
+                    sand was incredible."</p>
+                <strong>- John B.</strong>
+            </div>
+        </div>
+        <a href="#" class="more">Read More Testimonials</a>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-section brand">
+                <h3>Shangri-La Resort</h3>
+                <p>&copy; 2025 All Rights Reserved</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Rooms</a></li>
+                    <li><a href="#">Amenities</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: info@shangrila.com</p>
+                <p>Phone: +1 (800) 123-4567</p>
+            </div>
+
+            <div class="footer-section socials">
+                <h4>Follow Us</h4>
+                <div>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

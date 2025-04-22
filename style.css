@@ -1,0 +1,476 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', 'Dosis', 'Open Sans', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: white;
+    color: black;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #D95E40;
+    border-radius: 2%;
+}
+
+.logo-container img {
+    width: auto;
+    max-height: 50px;
+}
+
+.logo-container img:hover {
+    cursor: pointer;
+}
+
+svg path,
+svg ellipse,
+svg circle {
+    fill: white;
+    stroke-width: 0;
+}
+
+svg line {
+    stroke: white;
+    stroke-width: 6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(250, 250, 250, 0.95);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.25s;
+}
+
+.nav-links a:hover {
+    color: #D95E40;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background: url('/content/test.png');
+    background: (0, 0, 0, 0.9);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-top: 80px;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+}
+.weather-widget {
+    background: linear-gradient(135deg, #c2e9fb, #a1c4fd);
+    padding: 1.5rem;
+    border-radius: 16px;
+    max-width: 350px;
+    margin: 2rem auto;
+    text-align: center;
+  }
+  
+  .weather-widget h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .weather-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+  
+  .weather-info i {
+    font-size: 1.6rem;
+    color: #fbbf24;
+  }
+  
+.features,
+.accommodations,
+.testimonials {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+
+.features h2,
+.accommodations h2,
+.testimonials h2 {
+    font-size: 2.5rem;
+    color: #3A302B;
+    margin-bottom: 2rem;
+}
+
+
+.features {
+    margin-top: 5rem;
+    background-color: #F2E8D5;
+}
+
+
+.feature-responsiveness {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+
+.feature {
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+
+.feature img {
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+
+.feature h3 {
+    font-size: 1.5rem;
+    color: #3A302B;
+    margin: 10px 0;
+}
+
+
+.feature p {
+    color: #5C4A44;
+    font-size: 1rem;
+}
+
+.accommodations {
+    background-color: #FDF8F3;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+
+.accommodations h2 {
+    font-size: 2.5rem;
+    color: #3A302B;
+    margin-bottom: 2rem;
+}
+
+
+.rooms {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+
+.room {
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+
+.room:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+
+.room img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.room h3 {
+    font-size: 1.5rem;
+    color: #3A302B;
+    margin: 10px 0;
+}
+
+.room p {
+    color: #5C4A44;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+
+.room a {
+    display: inline-block;
+    text-decoration: none;
+    color: #A47149;
+    border: 1px solid #A47149;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.room a:hover {
+    background-color: #A47149;
+    color: white;
+}
+
+.testimonials {
+    padding: 60px 20px;
+    background-color: #F2E8D5;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    color: #3A302B;
+    margin-bottom: 40px;
+}
+
+.testimonial-list {
+    display: grid;
+    gap: 30px;
+    justify-content: center;
+}
+
+.testimonial {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.testimonial p {
+    color: #5C4A44;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.testimonial strong {
+    color: #3A302B;
+    font-weight: 600;
+}
+
+.more {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 25px;
+    background-color: #3A302B;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.more:hover {
+    background-color: #5C4A44;
+}
+
+footer {
+    background-color: #3A302B;
+    color: #F2E8D5;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    min-width: 180px;
+}
+
+.footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.footer-section h4 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 8px;
+}
+
+.footer-section a {
+    color: #F2E8D5;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: 500;
+}
+
+.footer-section a:hover {
+    color: white;
+}
+
+.footer-section p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.socials div {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+
+  
+
+
+
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .feature h3,
+    .room h3 {
+        font-size: 1.3rem;
+    }
+
+    .room p,
+    .feature p {
+        font-size: 0.95rem;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: white;
+        position: absolute;
+        top: 70px;
+        left: 0;
+    }
+
+    .footer-wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        flex: unset;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-section h3,
+    .footer-section h4 {
+        margin-top: 20px;
+    }
+
+    .socials div {
+        justify-content: center;
+    }
+    .menu-toggle {
+        display: block;
+    }
+
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .feature,
+    .room,
+    .testimonial {
+        padding: 16px;
+    }
+
+    footer {
+        padding: 30px 15px;
+    }
+
+    .footer-section h3 {
+        font-size: 1.2rem;
+    }
+
+    .footer-section a,
+    .footer-section p {
+        font-size: 0.9rem;
+    }
+}
