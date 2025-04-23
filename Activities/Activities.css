@@ -52,6 +52,8 @@ header {
     z-index: 10;
 }
 
+
+
 .nav-links {
     list-style: none;
     display: flex;
@@ -71,6 +73,143 @@ header {
 
 
 
+.main-content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+  }
+  
+
+  .main-content h1 {
+    font-size: 3rem;
+    color: #117a65;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .main-content h2 {
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    color: #148f77;
+    border-bottom: 2px solid #1abc9c;
+    padding-bottom: 0.5rem;
+  }
+  
+  .main-content h3 {
+    font-size: 1.5rem;
+    color: #1abc9c;
+    margin-bottom: 0.5rem;
+  }
+  
+
+  .main-content p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #34495e;
+    text-align: center;
+  }
+  
+  
+  .activity-block {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    gap: 2rem;
+    align-items: flex-start;
+  }
+  
+  /* Text Section */
+  .activity-text {
+    flex: 1 1 60%;
+  }
+  
+  .activity-text ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+  }
+  
+  .activity-text ul ul {
+    list-style-type: circle;
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  /* Image Section */
+  .activity-image {
+    flex: 1 1 35%;
+    max-height: 300px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .activity-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-radius: 12px;
+  }
+  
+  .activity-image img:hover {
+    transform: scale(1.05);
+  }
+  
+
+  .booking-info {
+    background-color: #e8f8f5;
+    border-left: 6px solid #1abc9c;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: 3rem;
+  }
+  
+  .booking-info h2 {
+    color: #0e6251;
+  }
+  
+  .booking-info ul {
+    list-style-type: square;
+    padding-left: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .booking-info li {
+    margin-bottom: 0.75rem;
+  }
+  
+  .closing-message {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #0b5345;
+  }
+  
+  @media (max-width: 768px) {
+    .activity-block {
+      flex-direction: column;
+    }
+  
+    .activity-image {
+      order: -1;
+    }
+  
+    .main-content h1 {
+      font-size: 2.25rem;
+    }
+  
+    .main-content h2 {
+      font-size: 1.5rem;
+    }
+  
+    .main-content h3 {
+      font-size: 1.25rem;
+    }
+  }
 
 
 footer {

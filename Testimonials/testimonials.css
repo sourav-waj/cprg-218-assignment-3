@@ -70,7 +70,74 @@ header {
 
 
 
+.guest-testimonials {
+    max-width: 1000px;
+    margin: auto;
+    padding: 3rem 1.5rem;
+    background: #fffdf9;
+    color: #2d3436;
+    text-align: center;
+  }
+  
+  .guest-testimonials h1 {
+    font-size: 2.75rem;
+    color: #117a65;
+    margin-bottom: 1rem;
+  }
+  
+  .guest-testimonials .intro {
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+    color: #555;
+  }
+  
+  .testimonial-card {
+    background-color: #e8f8f5;
+    border-left: 5px solid #1abc9c;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    text-align: left;
+  }
+  
+  .testimonial-card.alt {
+    background-color: #f0fdfa;
+    border-left-color: #16a085;
+  }
+  
+  .quote {
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #2c3e50;
+  }
+  
+  .guest-name {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #148f77;
+    text-align: right;
+  }
+  
+  .closing-message {
+    font-size: 1.05rem;
+    font-weight: 500;
+    margin-top: 3rem;
+    color: #0b5345;
+  }
+  
 
+  @media (max-width: 768px) {
+    .guest-testimonials h1 {
+      font-size: 2rem;
+    }
+  
+    .quote {
+      font-size: 1rem;
+    }
+  }
+  
 
 
 footer {

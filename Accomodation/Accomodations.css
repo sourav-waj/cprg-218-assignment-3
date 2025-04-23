@@ -71,6 +71,94 @@ header {
 
 
 
+.guest-rooms {
+    padding: 3rem 2rem;
+    font-family: 'Segoe UI', sans-serif;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .headline {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .intro {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 3rem;
+  }
+
+  .room {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+
+    align-items: center;
+  }
+
+  .room-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+
+  .room-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+  .room-content h2 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    color: #2e2e2e;
+  }
+
+  .room-content p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+  }
+
+  .room-content ul {
+    list-style: none;
+    padding-left: 1rem;
+  }
+
+  .room-content ul li {
+    position: relative;
+    margin-bottom: 0.5rem;
+    padding-left: 1.2rem;
+  }
+
+  .room-content ul li::before {
+    content: '\2713';
+    position: absolute;
+    left: 0;
+    color: #6b8e23;
+  }
+
+  @media (max-width: 768px) {
+    .room {
+      grid-template-columns: 1fr;
+    }
+  }
+
 
 
 footer {

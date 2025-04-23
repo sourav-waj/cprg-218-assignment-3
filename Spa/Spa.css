@@ -72,6 +72,180 @@ header {
 
 
 
+  
+
+  .serenity-sanctuary {
+    max-width: 1200px;
+    margin: auto;
+    padding: 3rem 1rem;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff9f7;
+    color: #2e2e2e;
+  }
+  
+  .serenity-sanctuary h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #b07a5c;
+    margin-bottom: 1rem;
+  }
+  
+  .serenity-sanctuary .intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    color: #555;
+    font-size: 1.2rem;
+  }
+  
+  .service-section {
+    margin-bottom: 3rem;
+  }
+  
+  .service-section h2 {
+    font-size: 1.8rem;
+    color: #a66e4a;
+    border-bottom: 2px solid #e0d0c2;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .service-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  
+  .service-grid.two-cols {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+  
+  .service-item {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .service-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .service-item h3 {
+    font-size: 1.2rem;
+    color: #874d36;
+    margin-bottom: 0.5rem;
+  }
+  
+  .service-item .duration {
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 0.5rem;
+  }
+  
+  .service-item .duration span {
+    color: #c96;
+  }
+  
+  .service-item .desc {
+    font-size: 0.95rem;
+    color: #666;
+  }
+  
+  .service-notes {
+    background-color: #fef1ea;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .service-notes h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #9a6149;
+  }
+  
+  .service-notes ul {
+    padding-left: 1.5rem;
+    color: #555;
+  }
+  
+  .service-notes li {
+    margin-bottom: 0.5rem;
+  }
+  
+
+
+
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .feature h3,
+    .room h3 {
+        font-size: 1.3rem;
+    }
+
+    .room p,
+    .feature p {
+        font-size: 0.95rem;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: white;
+        position: absolute;
+        top: 70px;
+        left: 0;
+    }
+
+    .footer-wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        flex: unset;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-section h3,
+    .footer-section h4 {
+        margin-top: 20px;
+    }
+
+    .socials div {
+        justify-content: center;
+    }
+    .menu-toggle {
+        display: block;
+    }
+
+}
+
+
+
+
+
+
+
+
+
 
 footer {
     background-color: #3A302B;
@@ -142,73 +316,8 @@ footer {
     font-size: 1.5rem;
   }
 
-  
 
-
-
-
-@media screen and (max-width: 768px) {
-    body {
-        font-size: 15px;
-    }
-
-    .hero h1 {
-        font-size: 2.2rem;
-    }
-
-    .hero p {
-        font-size: 1.1rem;
-    }
-
-    .feature h3,
-    .room h3 {
-        font-size: 1.3rem;
-    }
-
-    .room p,
-    .feature p {
-        font-size: 0.95rem;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background: white;
-        position: absolute;
-        top: 70px;
-        left: 0;
-    }
-
-    .footer-wrapper {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-section {
-        flex: unset;
-        width: 100%;
-        text-align: center;
-    }
-
-    .footer-section h3,
-    .footer-section h4 {
-        margin-top: 20px;
-    }
-
-    .socials div {
-        justify-content: center;
-    }
-    .menu-toggle {
-        display: block;
-    }
-
-}
-
-
-
-@media screen and (max-width: 480px) {
+  @media screen and (max-width: 480px) {
     .hero h1 {
         font-size: 1.8rem;
     }
@@ -236,8 +345,3 @@ footer {
         font-size: 0.9rem;
     }
 }
-
-
-
-
-
