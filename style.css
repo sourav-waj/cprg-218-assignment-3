@@ -74,7 +74,8 @@ header {
     justify-content: center;
     align-items: center;
     height: 90vh;
-    background-image: url('content/test.png');
+    background-image: url('content/hero.jpg');
+    backdrop-filter: blur(3px);
     background: (0, 0, 0, 0.9);
     background-position: center;
     background-repeat: no-repeat;
